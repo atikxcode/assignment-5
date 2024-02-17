@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <!-- Daisy UI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -12,6 +12,301 @@
 </head>
 <body>
   
+  <header>
+    <!-- Navbar section -->
+    <section class="container mx-auto w-full my-16">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52 text-[#030712b3] font-raleway font-medium">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl font-raleway font-extrabold">S-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-[#030712b3] font-raleway font-medium px-1">
+            <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn flex font-raleway font-bold text-[#1DD100] bg-[#1dd1001a]">Bus <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19C6.53043 19 7.03914 18.7893 7.41421 18.4142C7.78929 18.0391 8 17.5304 8 17M4 17C4 16.4696 4.21071 15.9609 4.58579 15.5858C4.96086 15.2107 5.46957 15 6 15C6.53043 15 7.03914 15.2107 7.41421 15.5858C7.78929 15.9609 8 16.4696 8 17M4 17H2V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H17C18.3261 5 19.5979 5.7375 20.5355 7.05025C21.4732 8.36301 22 10.1435 22 12M8 17H16M16 17C16 17.5304 16.2107 18.0391 16.5858 18.4142C16.9609 18.7893 17.4696 19 18 19C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17M16 17C16 16.4696 16.2107 15.9609 16.5858 15.5858C16.9609 15.2107 17.4696 15 18 15C18.5304 15 19.0391 15.2107 19.4142 15.5858C19.7893 15.9609 20 16.4696 20 17M20 17H22V12M22 12H17.5L16 5M2 10H17M7 5V10M12 5V10" stroke="#1DD100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="container mx-auto mb-[150px]">
+      <div class="hero h-[700px] w-[1520px]  bg-base-200 bg-cover bg-no-repeat relative" style="background-image: url('../images/banner.png');">
+        
+        <div class="hero-content text-center">
+          <div class="w-[550px]">
+            <h1 class="text-5xl leading-[86px] text-white font-raleway mb-4 font-extrabold">End-to-End Travel with  <span class="text-[#1DD100]">S Paribahan</span></h1>
+            <p class="py-6 text-white font-inter text-lg mb-[32px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <button class="bg-[#1DD100] text-black pt-[19px] pb-[19px] pr-[27px] pl-[27px] rounded-xl font-raleway font-bold ">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="text-black bg-white p-6 rounded-3xl absolute left-[17%] bottom-[-8%] flex felx-row border-b-4 border-[#1DD100]">
+          <img class="mr-3" src="images/people.png" alt="">
+          <div class="flex flex-col items-center">
+            <h2 class="font-inter text-4xl font-bold">500K+</h2>
+            <p class="font-inter text-lg text-[#03071299]">Registered users</p>
+          </div>
+        </div>
+        <div class="text-black bg-white p-6 rounded-3xl absolute left-[42%] bottom-[-8%] flex felx-row border-b-4 border-[#1DD100]">
+          <img class="mr-3" src="images/ticket-cupon.png" alt="">
+          <div class="flex flex-col items-center">
+            <h2 class="font-inter text-4xl font-bold">1.7 lacks</h2>
+            <p class="font-inter text-lg text-[#03071299]">Tickets sold</p>
+          </div>
+        </div>
+        <div class="text-black bg-white p-6 rounded-3xl absolute left-[67%] bottom-[-8%] flex felx-row border-b-4 border-[#1DD100]">
+          <img class="mr-3" src="images/stoppage.png" alt="">
+          <div class="flex flex-col items-center">
+            <h2 class="font-inter text-4xl font-bold">80K+</h2>
+            <p class="font-inter text-lg text-[#03071299]">Rental partners</p>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- Offer Section -->
+
+    <section class="container mx-auto my-[150px]">
+      <div class="flex flex-col items-center">
+        <p class="font-raleway text-4xl font-bold mb-12">Best offers for you</p>
+        <div class="flex flex-row mb-12">
+          <div class="flex flex-row bg-[#FFBF0F] mr-4 rounded-xl">
+            <div class="pl-16 pr-6 flex items-center ">
+              <p class=" font-inter"><span class="text-[#030712CC] text-4xl font-black ">15% OFF</span> <br>
+                <span class="text-[#030712CC] text-xl  font-semibold">on your next purchase</span><br>
+                <span class="text-[#03071280] text-lg font-medium ">use by January 2024</span></p>
+            </div>
+           
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="48" height="220" viewBox="0 0 48 220" fill="none">
+              <path d="M2.09815e-06 -3.81596e-07C1.82261e-06 3.15172 0.620775 6.27259 1.82689 9.1844C3.033 12.0962 4.80083 14.742 7.02943 16.9706C9.25804 19.1992 11.9038 20.967 14.8156 22.1731C17.7274 23.3792 20.8483 24 24 24C27.1517 24 30.2726 23.3792 33.1844 22.1731C36.0962 20.967 38.742 19.1992 40.9706 16.9706C43.1992 14.742 44.967 12.0962 46.1731 9.1844C47.3792 6.27259 48 3.15173 48 1.90735e-06L2.09815e-06 -3.81596e-07Z" fill="white"/>
+              <path d="M48 220C48 216.848 47.3792 213.727 46.1731 210.815C44.967 207.904 43.1992 205.258 40.9706 203.029C38.742 200.801 36.0962 199.033 33.1844 197.827C30.2726 196.621 27.1517 196 24 196C20.8483 196 17.7274 196.621 14.8156 197.827C11.9038 199.033 9.25804 200.801 7.02944 203.029C4.80083 205.258 3.033 207.904 1.82689 210.815C0.620778 213.727 -2.75532e-07 216.848 0 220L48 220Z" fill="white"/>
+              <line x1="25" y1="32" x2="25" y2="188" stroke="white" stroke-width="2" stroke-dasharray="5 5"/>
+              </svg></div>
+            <div class="pl-8 pr-20 flex items-center">
+              <p><span class="text-[#030712] text-3xl font-bold font-raleway">NEW15</span> <br>
+                <span class="text-[#03071266] font-raleway font-medium text-xl">Coupon Code</span></p>
+            </div>
+          </div>
+          <div class="flex flex-row bg-[#F78C9C] ml-4 rounded-xl">
+            <div class="pl-16 pr-6 flex items-center ">
+              <p class=" font-inter"><span class="text-[#030712CC] text-4xl font-black ">20% OFF</span> <br>
+                <span class="text-[#030712CC] text-xl  font-semibold">on your next purchase</span><br>
+                <span class="text-[#03071280] text-lg font-medium ">use by January 2024</span></p>
+            </div>
+           
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="48" height="220" viewBox="0 0 48 220" fill="none">
+              <path d="M2.09815e-06 -3.81596e-07C1.82261e-06 3.15172 0.620775 6.27259 1.82689 9.1844C3.033 12.0962 4.80083 14.742 7.02943 16.9706C9.25804 19.1992 11.9038 20.967 14.8156 22.1731C17.7274 23.3792 20.8483 24 24 24C27.1517 24 30.2726 23.3792 33.1844 22.1731C36.0962 20.967 38.742 19.1992 40.9706 16.9706C43.1992 14.742 44.967 12.0962 46.1731 9.1844C47.3792 6.27259 48 3.15173 48 1.90735e-06L2.09815e-06 -3.81596e-07Z" fill="white"/>
+              <path d="M48 220C48 216.848 47.3792 213.727 46.1731 210.815C44.967 207.904 43.1992 205.258 40.9706 203.029C38.742 200.801 36.0962 199.033 33.1844 197.827C30.2726 196.621 27.1517 196 24 196C20.8483 196 17.7274 196.621 14.8156 197.827C11.9038 199.033 9.25804 200.801 7.02944 203.029C4.80083 205.258 3.033 207.904 1.82689 210.815C0.620778 213.727 -2.75532e-07 216.848 0 220L48 220Z" fill="white"/>
+              <line x1="25" y1="32" x2="25" y2="188" stroke="white" stroke-width="2" stroke-dasharray="5 5"/>
+              </svg></div>
+            <div class="pl-8 pr-20 flex items-center">
+              <p><span class="text-[#030712] text-3xl font-bold font-raleway">Couple 20</span> <br>
+                <span class="text-[#03071266] font-raleway font-medium text-xl">Coupon Code</span></p>
+            </div>
+          </div>
+          
+        </div>
+
+        <button class=" bg-white text-[#1DD100] font-raleway text-xl font-bold border-[1px] border-[#1DD100] p-5 rounded-xl">See All Offers</button>
+      </div>
+    </section>
+
+    <!-- Ticket Section -->
+    
+    <section class="bg-[#F7F8F8] my-[150px] border-t-4 border-[#1DD100] rounded-[70px]">
+      <div class="flex flex-col">
+
+        <div class="flex flex-col items-center">
+          <h2 class="text-[#030712] font-raleway text-4xl font-bold pt-40 mb-6">S Paribahan</h2>
+          <p class="w-[736px] text-[#03071299] text-lg font-inter text-center mb-12">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+
+        <div class="flex flex-row mx-auto bg-[#FFF] mb-8">
+
+          <div>
+            <div class="flex flex-row p-8">
+              <img class="w-[68.57px] h-[48px] mr-3" src="images/bus-logo.png" alt="">
+              <div class="felx flex-col pr-24">
+                <h2 class="text-[#030712] text-4xl font-raleway font-bold ">Greenline Paribahan</h2>
+                <p class="text-[#03071299] font-inter text-lg">Coach-009-WEB ! AC_Business</p>
+              </div>
+              <div class="pr-6 pl-28">
+                <button class="btn flex  bg-[#1dd10026]"><img class="mr-2" src="images/seat-green.png" alt=""><span class="text-[#1DD100] font-inter text-lg font-medium">40 Seats left</span></button>
+              </div>
+            </div>
+
+            <div class="p-8">
+              <div class="flex flex-col p-5 rounded-3xl bg-[#F7F8F8]">
+                <div class="flex flex-row justify-between mb-4 font-raleway">
+                  <p>Route</p>
+                  <p>Dhaka - Sylhet</p>
+                </div>
+                <hr class="divide-dotted mb-4">
+                <div class="flex flex-row justify-between mb-4 font-raleway">
+                  <p>Departure Time</p>
+                  <p>9:00 PM</p>
+                </div>
+                <hr class="divide-dotted mb-4">
+                <div class="flex flex-row justify-between">
+                  <button class="bg-[#0307120d] p-4 rounded-xl font-inter">Boarding Point - Laxmipur</button>
+                  <button class="bg-[#0307120d] p-4 rounded-xl font-inter">Dropping Point - Bogura</button>
+                  <button class="bg-[#0307120d] p-4 rounded-xl font-inter">Est. Time - 11 Hour</button>
+                </div>
+              </div>
+            </div>
+  
+            
+
+          </div>
+
+          <div>
+            <img src="images/info-devider.png" alt="">
+          </div>
+          <div class="flex flex-col items-center p-12 justify-center">
+            <img src="images/fare.png" alt="">
+            <h2 class="text-center text-[#030712] font-raleway text-3xl font-bold">550 Taka</h2>
+            <p class="text-[#03071299] text-2xl font-semibold font-raleway">Per Seat</p>
+          </div>
+        
+        </div>
+
+      
+        <div class="bg-white mx-auto">
+          <div class=" flex flex-col">
+
+            <div class="p-6 mx-auto flex flex-col  w-full">
+              <div>
+                <p class="font-raleway text-2xl text-[#030712] font-semibold mb-4">Select Your Seat</p>
+              </div>
+              <hr class="border-dotted">
+              <div class="flex flex-row justify-between">
+                <div class="flex flex-row mt-4">
+                  <img src="images/seat-gray.png" alt="">
+                  <p class="font-inter text-lg text-[#03071280] font-medium">Available</p>
+                </div>
+                <div class="flex flex-row justify-end mt-4 ml-[70%] ">
+                  <img src="images/seat-green-filled.png" alt="">
+                  <p class="font-inter text-lg text-[#1DD100] font-medium">Selected</p>
+                </div>
+                
+              </div>
+              <hr class="border-dotted mt-4">
+            </div>
+  
+            <div class="flex justify-end">
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl flex items-center justify-center mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333" stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">A</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">A1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">A2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">A3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">A4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">B</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">B1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">B2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">B3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">B4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">C</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">C1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">C2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">C3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">C4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">D</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">D1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">D2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">D3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">D4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">E</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">E1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">E2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">E3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">E4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">F</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">F1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">F2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">F3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">F4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">G</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">G1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">G2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">G3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">G4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">H</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">H1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">H2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">H3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">H4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">I</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">I1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">I2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">I3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">I4</button>
+            </div>
+            <div class="flex gap-8 mb-8 text-[#03071280]">
+              <button class="w-[110px] h-[56px]">J</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">J1</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">J2</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">J3</button>
+              <button class="bg-[#F7F8F8] w-[110px] h-[56px] rounded-xl">J4</button>
+            </div>
+  
+          </div>
+        </div>
+
+        
+
+      </div>
+      
+
+
+     
+
+      
+    </section>
+
+
+
+
+  </main>
 
   <script src="scripts/script.js"></script>
 </body>
