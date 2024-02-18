@@ -94,6 +94,8 @@ function applyButton(){
   const applyBtn = document.getElementById('apply-button');
   const coupon = document.getElementById('coupon');
 
+ 
+
   if(coupon.value !== ''){
     applyBtn.removeAttribute('disabled');
   }
@@ -124,18 +126,32 @@ function applyButton(){
 // }
 
 function discount() {
-  const applyBtn = document.getElementById('apply-button');
+  const coupon = document.getElementById('coupon').value;
+  
+  
   const grandPriceElement = document.getElementById('grand-price');
   let grandPrice = parseInt(grandPriceElement.textContent);
 
-  if (applyBtn.textContent === 'NEW15') {
+  if (coupon === 'NEW15') {
       const discount = grandPrice;
       const discountedPrice = discount * 0.15;
-      grandPriceElement.innerHTML = discountedPrice;
-  } else if (applyBtn.textContent === 'Couple 20') {
+      const finalPrice = discount - discountedPrice;
+      grandPriceElement.innerHTML = finalPrice;
+      const coupon = document.getElementById('coupon');
+      coupon.classList.add('hidden');
+      const applyButton = document.getElementById('apply-button');
+      applyButton.classList.add('hidden');
+  } else if (coupon === 'Couple 20') {
       const discount = grandPrice;
       const discountedPrice = discount * 0.20;
-      grandPriceElement.innerHTML = discountedPrice;
+      const finalPrice = discount - discountedPrice;
+      grandPriceElement.innerHTML = finalPrice;
+      const coupon = document.getElementById('coupon');
+      coupon.classList.add('hidden');
+      const applyButton = document.getElementById('apply-button');
+      applyButton.classList.add('hidden');
+  } else{
+    window.alert("Wrong coupon code! Please provide a valid coupon code.")
   }
 }
 
