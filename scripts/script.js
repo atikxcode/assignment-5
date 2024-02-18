@@ -153,7 +153,17 @@ function discount() {
   } else{
     window.alert("Wrong coupon code! Please provide a valid coupon code.")
   }
+
+
+
 }
+
+
+
+document.getElementById('scrollButton').addEventListener('click', function() {
+  var section = document.getElementById('sectionToScrollTo');
+  section.scrollIntoView({ behavior: 'smooth' });
+});
 
 
 
