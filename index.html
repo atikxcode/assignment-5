@@ -56,7 +56,7 @@
           <div class="w-auto lg:w-[550px]">
             <h1 class="text-3xl lg:text-5xl leading-[40px] lg:leading-[86px] text-white font-raleway mb-4 font-extrabold">End-to-End Travel with  <span class="text-[#1DD100]">S Paribahan</span></h1>
             <p class="py-2 lg:py-6 text-white font-inter text-[14px] lg:text-lg mb-[20px] lg:mb-[32px] ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <button class="bg-[#1DD100] text-black pt-[19px] pb-[19px] pr-[27px] pl-[27px] rounded-xl font-raleway font-bold ">Buy Tickets</button>
+            <a href="#ticket"><button  class="bg-[#1DD100] text-black pt-[19px] pb-[19px] pr-[27px] pl-[27px] rounded-xl font-raleway font-bold ">Buy Tickets</button></a>
           </div>
         </div>
         <div class="text-black bg-white p-1 lg:p-6 rounded-3xl absolute left-[4%] lg:left-[17%] bottom-[-25%] lg:bottom-[-8%] flex felx-row border-b-4 border-[#1DD100]">
@@ -133,7 +133,7 @@
 
     <!-- Ticket Section -->
     
-    <section class="bg-[#F7F8F8] mt-[150px] border-t-4  border-[#1DD100] rounded-t-[70px]">
+    <section id="ticket" class="bg-[#F7F8F8] mt-[150px] border-t-4  border-[#1DD100] rounded-t-[70px]">
       <div class="flex flex-col w-full">
 
         <div class=" flex flex-col items-center">
@@ -151,7 +151,7 @@
                 <p class="text-[#03071299] font-inter text-[14px] lg:text-lg">Coach-009-WEB ! AC_Business</p>
               </div>
               <div class="pr-0 lg:pr-6 pl-0 lg:pl-28 flex flex-row lg:flex-none">
-                <button class="btn flex-col lg:felx-row  bg-[#1dd10026]"><img class="lg:mr-2" src="images/seat-green.png" alt=""><span class="text-[#1DD100] font-inter text-[14px] lg:text-lg font-medium">40 Seats left</span></button>
+                <button class="btn flex-col lg:felx-row  bg-[#1dd10026]"><img class="lg:mr-2" src="images/seat-green.png" alt=""><span class="text-[#1DD100] font-inter text-[14px] lg:text-lg font-medium"><span id="seat-left">40</span> Seats left</span></button>
               </div>
             </div>
 
@@ -227,74 +227,74 @@
               </svg></button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
-              <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">A</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A4</button>
+              <button  class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">A</button>
+              <button id="a1" onclick="setPrice('a1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A1</button>
+              <button id="a2" onclick="setPrice('a2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A2</button>
+              <button id="a3" onclick="setPrice('a3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A3</button>
+              <button id="a4" onclick="setPrice('a4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">A4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">B</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B4</button>
+              <button id="b1" onclick="setPrice('b1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B1</button>
+              <button id="b2" onclick="setPrice('b2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B2</button>
+              <button id="b3" onclick="setPrice('b3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B3</button>
+              <button id="b4" onclick="setPrice('b4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">B4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">C</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C4</button>
+              <button id="c1" onclick="setPrice('c1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C1</button>
+              <button id="c2" onclick="setPrice('c2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C2</button>
+              <button id="c3" onclick="setPrice('c3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C3</button>
+              <button id="c4" onclick="setPrice('c4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">C4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">D</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D4</button>
+              <button id="d1" onclick="setPrice('d1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D1</button>
+              <button id="d2" onclick="setPrice('d2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D2</button>
+              <button id="d3" onclick="setPrice('d3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D3</button>
+              <button id="d4" onclick="setPrice('d4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">D4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">E</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E4</button>
+              <button id="e1" onclick="setPrice('e1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E1</button>
+              <button id="e2" onclick="setPrice('e2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E2</button>
+              <button id="e3" onclick="setPrice('e3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E3</button>
+              <button id="e4" onclick="setPrice('e4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">E4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">F</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F4</button>
+              <button id="f1" onclick="setPrice('f1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F1</button>
+              <button id="f2" onclick="setPrice('f2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F2</button>
+              <button id="f3" onclick="setPrice('f3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F3</button>
+              <button id="f4" onclick="setPrice('f4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">F4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">G</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G4</button>
+              <button id="g1" onclick="setPrice('g1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G1</button>
+              <button id="g2" onclick="setPrice('g2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G2</button>
+              <button id="g3" onclick="setPrice('g3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G3</button>
+              <button id="g4" onclick="setPrice('g4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">G4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">H</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H4</button>
+              <button id="h1" onclick="setPrice('h1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H1</button>
+              <button id="h2" onclick="setPrice('h2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H2</button>
+              <button id="h3" onclick="setPrice('h3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H3</button>
+              <button id="h4" onclick="setPrice('h4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">H4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">I</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I4</button>
+              <button id="i1" onclick="setPrice('i1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I1</button>
+              <button id="i2" onclick="setPrice('i2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I2</button>
+              <button id="i3" onclick="setPrice('i3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I3</button>
+              <button id="i4" onclick="setPrice('i4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">I4</button>
             </div>
             <div class="flex gap-8 mb-8 text-[#03071280]">
               <button class="w-[50px] lg:w-[110px] h-[40px] lg:h-[56px]">J</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J1</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J2</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J3</button>
-              <button class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J4</button>
+              <button id="j1" onclick="setPrice('j1', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J1</button>
+              <button id="j2" onclick="setPrice('j2', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J2</button>
+              <button id="j3" onclick="setPrice('j3', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J3</button>
+              <button id="j4" onclick="setPrice('j4', 'seat-name')" class="bg-[#F7F8F8] w-[50px] lg:w-[110px] h-[40px] lg:h-[56px] rounded-xl">J4</button>
             </div>
   
           </div>
@@ -308,40 +308,42 @@
               <div class="bg-[#F7F8F8] rounded-xl p-6 lg:p-8 font-inter w-auto">
 
               <div class="flex justify-around lg:justify-between w-auto lg:w-[430px]  mb-4">
-                <p class="text-[14px] lg:text-[16px] font-medium">Seat <span class="bg-[#1DD100] text-white lg:pl-2 lg:pr-2 pt-0 pb-0 rounded-xl">2</span></p>
+                <p class="text-[14px] lg:text-[16px] font-medium">Seat <span id="counter" class="bg-[#1DD100] text-white lg:pl-2 lg:pr-2 pt-0 pb-0 rounded-xl">0</span></p>
                 <p class="text-[14px] lg:text-[16px] font-medium">Class</p>
                 <p class="text-[14px] lg:text-[16px] font-medium">Price</p>
               </div>
 
               <hr class="border-[1px]  border-dotted mb-4">
 
-              <div class="flex justify-around lg:justify-between w-auto lg:w-[430px] mb-4">
-                <p class="text-[#03071280] text-[14px] lg:text-[16px]">C2</p>
-                <p class="text-[#03071280] text-[14px] lg:text-[16px]">Economy</p>
-                <p class="text-[#03071280] text-[14px] lg:text-[16px]">550</p>
-              </div>
-
-              <div class="flex justify-around lg:justify-between w-auto  lg:w-[430px] mb-4">
-                <p class="text-[#03071280] text-[14px] lg:text-[16px]">C2</p>
-                <p class="text-[#03071280] text-[14px] lg:text-[16px]">Economy</p>
-                <p class="text-[#03071280] text-[14px] lg:text-[16px]">550</p>
+                <div id="seat-name">
+                  <!-- <div class="flex justify-around lg:justify-between w-auto lg:w-[430px] mb-4">
+                    <p class="text-[#03071280] text-[14px] lg:text-[16px]">C2</p>
+                    <p class="text-[#03071280] text-[14px] lg:text-[16px]">Economy</p>
+                    <p class="text-[#03071280] text-[14px] lg:text-[16px]">550</p>
+                  </div>
+    
+                  <div class="flex justify-around lg:justify-between w-auto  lg:w-[430px] mb-4">
+                    <p class="text-[#03071280] text-[14px] lg:text-[16px]">C2</p>
+                    <p class="text-[#03071280] text-[14px] lg:text-[16px]">Economy</p>
+                    <p class="text-[#03071280] text-[14px] lg:text-[16px]">550</p>
+                </div> -->
               </div>
 
               <hr class="border-[1px]  border-dotted mb-4">
 
               <div class="flex justify-around lg:justify-between w-auto  lg:w-[430px] mb-4">
                 <p>Total Price</p>
-                <p>BDT 1100</p>
+                <p>BDT <span id="total-price">0</span></p>
               </div>
 
               <div class="flex flex-row justify-center mb-4 items-center">
-                <input class="p-5 w-[350px] lg:w-[390px] rounded-xl h-[70px]" type="text" placeholder="Have any coupon?">
-                <button class="ml-[-100px] bg-[#1DD100] h-[50px] w-[90px] rounded-xl font-inter text-[16px] text-white font-semibold">Apply</button>
+                <input id="coupon" onkeyup="applyButton()" class="p-5 w-[350px] lg:w-[390px] rounded-xl h-[70px]" type="text" placeholder="Have any coupon?">
+                <button id="apply-button" onclick="discount()"  disabled class="disabled:bg-gray-400 disabled:text-gray-600 ml-[-100px] bg-[#1DD100] h-[50px] w-[90px] rounded-xl font-inter text-[16px] text-white font-semibold">Apply</button>
               </div>
 
               <div class="flex justify-around lg:justify-between w-auto lg:w-[430px]">
                 <p>Grand Total</p>
-                <p>BDT 1100</p>
+                <p>BDT <span id="grand-price">0</span></p>
               </div>
             </div>
 
@@ -351,10 +353,22 @@
                 <p class="mt-6 mb-6 font-inter text-[16px] font-semibold">Passenger Name*</p>
               <input class="border-[1px] border-[#03071280] mb-6 font-inter text-[16px] p-4 rounded-xl" type="text" placeholder="Enter your name">
               <p class=" mb-6 font-inter text-[16px] font-semibold">Phone Number*</p>
-              <input class="border-[1px] border-[#03071280] mb-6 font-inter text-[16px] p-4 rounded-xl" type="text" placeholder="Enter your phone number">
+              <input id="phone-number" onkeyup="nextButton()" class="border-[1px] border-[#03071280] mb-6 font-inter text-[16px] p-4 rounded-xl" type="text" placeholder="Enter your phone number">
               <p class=" mb-6 font-inter text-[16px] font-semibold">Email ID</p>
               <input class="border-[1px] border-[#03071280] mb-6 font-inter text-[16px] p-4 rounded-xl" type="text" placeholder="Enter your email id">
-              <button class="mb-6 bg-[#1DD100] p-4 text-white font-raleway text-xl font-extrabold rounded-xl">Next</button>
+              <button id="next-button" disabled onclick="my_modal_4.showModal()" class="disabled:bg-gray-400 disabled:text-gray-600 mb-6 bg-[#1DD100] p-4 text-white font-raleway text-xl font-extrabold rounded-xl">Next</button>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button, it will close the modal -->
+                      <button onclick="window.location.reload()" class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
               </div>
               <div class="flex flex-row justify-center gap-8 mb-24">
                 <p class="underline font-inter text-[16px] text-[#030712] underline-offset-2">Terms and Conditions</p>
