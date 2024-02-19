@@ -8,10 +8,10 @@ function setPrice(id1, id2){
   
   const seatName = innerTextFinder(id1);
   
-  console.log(seatName);
+ 
   
   const div = document.getElementById(id2);
-  console.log(div);
+ 
   const counts = div.childElementCount;
   
   if(div.textContent.includes(seatName)){
@@ -101,29 +101,6 @@ function applyButton(){
   }
 }
 
-// function discount(){
-//   const applyBtn = document.getElementById('apply-button');
-//   console.log(applyBtn);
-//   const grandPriceElement = document.getElementById('grand-price');
-//   const grandPrice = parseInt(grandPriceElement.textContent);
-//   console.log(grandPrice);
-  
-//   if(applyBtn.textContent === 'NEW15'){
-//     const grandPriceElement = document.getElementById('grand-price');
-//     const grandPrice = parseInt(grandPriceElement.textContent);
-//     const discount = grandPrice;
-//     const discountedPrice = discount * 0.15;
-//     grandPriceElement.innerHTML = discountedPrice;
-
-//   } else if(applyBtn.textContent === 'Couple 20'){
-//     const grandPriceElement = document.getElementById('grand-price');
-//     const grandPrice = parseInt(grandPriceElement.textContent);
-    
-//     console.log(grandPrice);
-//     const discount = grandPrice;
-//     const discountedPrice = discount * 0.20;
-//   }
-// }
 
 function discount() {
   const coupon = document.getElementById('coupon').value;
